@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: content/heroBlock.mdx
+  path: ".forestry/front_matter/templates/heroblock.yml"
   label: Hero block
 - type: heading
   label: Content
