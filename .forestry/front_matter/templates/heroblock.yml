@@ -1,4 +1,12 @@
 ---
 label: heroblock
 hide_body: false
-fields: []
+fields:
+- name: page_sections
+  type: blocks
+  label: Page_sections
+  template_types:
+  - heroblock
+  config:
+    min: 
+    max: 
