@@ -5,8 +5,7 @@ fields:
 - name: page_sections
   type: blocks
   label: Page_sections
-  template_types:
-  - heroblock
+  template_types: []
   config:
     min: 
     max: 

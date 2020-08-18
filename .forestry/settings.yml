@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/heroBlock.mdx
   label: Hero block
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
