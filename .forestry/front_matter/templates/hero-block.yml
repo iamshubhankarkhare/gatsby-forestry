@@ -5,3 +5,10 @@ fields:
 - type: list
   name: authors
   label: authors
+- name: heroblock
+  type: blocks
+  label: HeroBlock
+  template_types: []
+  config:
+    min: 
+    max: 
