@@ -5,7 +5,8 @@ fields:
 - name: page_sections
   type: blocks
   label: Page_sections
-  template_types: []
+  template_types:
+  - highlights
   config:
     min: 
     max: 
