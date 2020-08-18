@@ -10,6 +10,7 @@ fields:
   label: HeroBlock
   template_types:
   - hero-block
+  - blog-post
   config:
     min: 
     max: 
