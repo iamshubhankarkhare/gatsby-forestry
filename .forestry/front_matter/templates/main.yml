@@ -1,7 +1,0 @@
----
-label: main
-hide_body: true
-fields:
-- type: text
-  name: name
-  label: name
