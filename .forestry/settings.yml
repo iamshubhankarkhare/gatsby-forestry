@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: content
+  label: Index Page
+  match: "**/*"
+- type: document
   path: ".forestry/front_matter/templates/highlights.yml"
   label: highlights
 - type: document
