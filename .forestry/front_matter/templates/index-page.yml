@@ -1,4 +1,13 @@
 ---
 label: Index Page
 hide_body: false
-fields: []
+fields:
+- name: index_page
+  type: blocks
+  label: Index_Page
+  template_types:
+  - hero-block
+  - card-section
+  config:
+    min: 
+    max: 
