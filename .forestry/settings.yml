@@ -7,7 +7,6 @@ sections:
 - type: document
   path: ".forestry/front_matter/templates/highlights.yml"
   label: highlights
-  match: "**/*"
 - type: document
   path: ".forestry/front_matter/templates/heroblock.yml"
   label: Hero block
