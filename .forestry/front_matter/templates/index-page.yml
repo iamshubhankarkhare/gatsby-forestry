@@ -2,6 +2,11 @@
 label: Index Page
 hide_body: false
 fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
 - name: index_page
   type: blocks
   label: Index_Page
