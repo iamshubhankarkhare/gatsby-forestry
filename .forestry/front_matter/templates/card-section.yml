@@ -1,4 +1,33 @@
 ---
 label: Card Section
 hide_body: true
-fields: []
+fields:
+- name: card
+  type: field_group_list
+  fields:
+  - name: card_header
+    type: text
+    config:
+      required: false
+    label: Card_Header
+  - name: card_media
+    type: file
+    config:
+      maxSize: 64
+    label: Card_Media
+  - name: card_body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+      max: 150
+    label: Card_Body
+  config:
+    min: 1
+    max: 
+    labelField: 
+  label: Card
+  description: Simple Card component
