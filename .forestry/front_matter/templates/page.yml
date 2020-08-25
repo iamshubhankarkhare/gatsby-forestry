@@ -1,0 +1,26 @@
+---
+label: Page
+hide_body: false
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: path
+  type: text
+  config:
+    required: false
+  label: Path
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - heroblock
+  - cardblock
+  - heroblock
+  config:
+    min: 
+    max: 
+pages:
+- content/pages/homepage.md

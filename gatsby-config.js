@@ -1,7 +1,5 @@
-const config = require("./config.json")
-const infoData = require("./content/data/info.json")
-
 module.exports = {
+<<<<<<< HEAD
   //this makes the site config available to forestry cms
   siteMetadata: {
     title: config.title,
@@ -12,6 +10,8 @@ module.exports = {
     primaryColor: config.primary_color,
     infoData: infoData,
   },
+=======
+>>>>>>> 7f8fca9611061647039a153309ee2a7040ef8f23
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-transformer-remark",
@@ -25,6 +25,7 @@ module.exports = {
       },
     },
     {
+<<<<<<< HEAD
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
@@ -40,17 +41,20 @@ module.exports = {
     },
     {
       resolve: "gatsby-source-filesystem",
+=======
+      resolve: `gatsby-source-filesystem`,
+>>>>>>> 7f8fca9611061647039a153309ee2a7040ef8f23
       options: {
-        name: "data",
-        path: `${__dirname}/content/data`,
+        name: "images",
+        path: `${__dirname}/content/images`,
       },
     },
 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: `${__dirname}/content/images`,
+        name: "pages",
+        path: `${__dirname}/content/pages`,
       },
     },
     {
