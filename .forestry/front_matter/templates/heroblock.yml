@@ -26,3 +26,13 @@ fields:
   config:
     maxSize: 64
   label: Media
+- name: type
+  type: number
+  label: Type
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
