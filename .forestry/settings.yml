@@ -3,7 +3,17 @@ new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url: 
-sections: 
+sections:
+- type: directory
+  path: content/pages
+  label: Pages
+  create: all
+  match: "**/*"
+  new_doc_ext: ".mdx"
+  templates:
+  - page
+- type: heading
+  label: Pages
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
