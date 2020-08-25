@@ -1,4 +1,36 @@
 ---
 label: CardBlock
 hide_body: true
-fields: []
+fields:
+- name: card
+  type: field_group_list
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body
+  - name: media
+    type: file
+    config:
+      maxSize: 64
+    label: Media
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Card
