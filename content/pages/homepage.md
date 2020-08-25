@@ -13,5 +13,20 @@ blocks:
     string from the file rather than a specific variable. Note that you can only have
     one page query per file.
   media: "/content/images/sonja-punz-N47B_zibNGo-unsplash.jpg"
+- template: cardblock
+  heading: Customizing the GraphQL Schema
+  subtitle: 'The example project is a blog that gets its data from local Markdown
+    files which provide the post contents, as well as author information in JSON format. '
+  card:
+  - heading: Card 2
+    subtitle: subtitle
+    body: The first part of writing the GraphQL query is including the operation (in
+      this case ”query”) along with a name.
+    media: "/content/images/ruslan-bardash-g83y6do219w-unsplash.jpg"
+  - heading: Card 1
+    subtitle: subtitle
+    body: The first part of writing the GraphQL query is including the operation (in
+      this case ”query”) along with a name.
+    media: "/content/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
 
 ---
