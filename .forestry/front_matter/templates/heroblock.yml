@@ -1,4 +1,23 @@
 ---
 label: HeroBlock
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: true
+  label: Heading
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
