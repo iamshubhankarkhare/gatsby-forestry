@@ -1,4 +1,14 @@
 ---
 label: Page
 hide_body: false
-fields: []
+fields:
+- name: page
+  type: blocks
+  label: Page
+  template_types:
+  - heroblock
+  - cardblock
+  - heroblock
+  config:
+    min: 
+    max: 
