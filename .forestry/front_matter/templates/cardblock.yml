@@ -2,6 +2,16 @@
 label: CardBlock
 hide_body: true
 fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
 - name: card
   type: field_group_list
   fields:
