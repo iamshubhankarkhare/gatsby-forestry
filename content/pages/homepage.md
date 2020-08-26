@@ -4,7 +4,7 @@ path: homepage
 blocks:
   - template: heroblock
     type: "1"
-    heading: Customizing the GraphQL Schema
+    heading: Cust the GraphQL Schema
     subtitle:
       One of Gatsby’s main strengths is the ability to query data from a variety
       of sources in a uniform way with GraphQL. For this to work, a GraphQL Schema must
@@ -15,6 +15,9 @@ blocks:
       string from the file rather than a specific variable. Note that you can only have
       one page query per file.
     media: "/content/images/sonja-punz-N47B_zibNGo-unsplash.jpg"
+    cta: 
+      - content: "CTA1"
+        url: "https://beyond8.in/"
   - template: cardblock
     heading: Customizing the GraphQL Schema
     subtitle:
@@ -33,4 +36,5 @@ blocks:
           The first part of writing the GraphQL query is including the operation (in
           this case ”query”) along with a name.
         media: "/content/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
+
 ---

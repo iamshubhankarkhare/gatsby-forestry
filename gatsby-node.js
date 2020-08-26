@@ -29,10 +29,21 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         heading: "String",
         subtitle: "String",
         body: "String",
+        media: "String",
         type: "Int",
+        cta: ["cta"],
       },
       interfaces: ["Node"],
     }),
+    schema.buildObjectType({
+      name: "cta",
+      fields: {
+        content: "String",
+        url: "String",
+      },
+      interfaces: ["Node"],
+    }),
+
     schema.buildObjectType({
       name: "Card",
       fields: {
