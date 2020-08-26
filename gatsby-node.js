@@ -40,6 +40,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       fields: {
         content: "String",
         url: "String",
+        type: "String",
       },
       interfaces: ["Node"],
     }),

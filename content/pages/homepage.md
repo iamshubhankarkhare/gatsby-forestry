@@ -3,7 +3,7 @@ name: homepage
 path: homepage
 blocks:
   - template: heroblock
-    type: "1"
+    type: "3"
     heading: Cust the GraphQL Schema
     subtitle:
       One of Gatsby’s main strengths is the ability to query data from a variety
@@ -18,6 +18,10 @@ blocks:
     cta: 
       - content: "CTA1"
         url: "https://beyond8.in/"
+        type: "button"
+      - content: "CTA2"
+        url: "https://beyond8.in/"
+        type: "link"
   - template: cardblock
     heading: Customizing the GraphQL Schema
     subtitle:
