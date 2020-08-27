@@ -4,20 +4,20 @@ hide_body: true
 fields:
 - name: sections
   type: blocks
+  label: Sections
   template_types:
   - text
   config:
     min: 
     max: 
-  label: Sections
-  description: All different sections inside heroblock.
+  description: 'Choose different sections: title,subtitle,description, media etc.'
 - name: type
   type: number
-  label: Type
-  description: Type of Hero Block.
+  description: Type of hero block
   default: 0
   required: true
   config:
     min: 
     max: 
     step: 
+  label: Type

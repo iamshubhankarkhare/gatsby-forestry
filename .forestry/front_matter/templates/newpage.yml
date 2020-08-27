@@ -2,13 +2,14 @@
 label: NewPage
 hide_body: true
 fields:
-- name: sections
+- name: blocks
   type: blocks
-  label: Sections
+  label: Blocks
   template_types:
-  - block
+  - heroblock2
   config:
     min: 
     max: 
+  description: Different blocks in a page
 pages:
 - content/pages/homepage2.md
