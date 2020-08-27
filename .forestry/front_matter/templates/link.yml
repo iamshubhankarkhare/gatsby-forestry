@@ -1,0 +1,33 @@
+---
+label: Link
+hide_body: true
+fields:
+- name: linktext
+  type: text
+  config:
+    required: false
+  label: LinkText
+  description: The text to be shown as a link
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: Write the url for the link
+- name: variant
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - solid
+    - ghost
+    - outline
+    - link
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Variant
+  description: The style of link
