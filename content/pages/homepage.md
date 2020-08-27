@@ -3,7 +3,7 @@ name: homepage
 path: homepage
 blocks:
   - template: heroblock
-    type: "3"
+    type: "1"
     heading: Cust the GraphQL Schema
     subtitle:
       One of Gatsby’s main strengths is the ability to query data from a variety
