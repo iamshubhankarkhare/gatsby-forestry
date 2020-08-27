@@ -35,3 +35,8 @@ fields:
     color_format: Hex
   label: Color
   default: "#000000"
+- name: props
+  type: tag_list
+  default: []
+  label: Props
+  description: Only CSS Chakra props are allowed
