@@ -1,4 +1,23 @@
 ---
 label: HeroBlock2
 hide_body: true
-fields: []
+fields:
+- name: sections
+  type: blocks
+  label: Sections
+  template_types:
+  - text
+  config:
+    min: 
+    max: 
+  description: 'Choose different sections: title,subtitle,description, media etc.'
+- name: type
+  type: number
+  description: Type of hero block
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Type
