@@ -67,10 +67,50 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       },
     }),
     schema.buildObjectType({
+      name: "Text",
+      fields: {
+        template: "String!",
+        type: "String",
+        color: "String",
+        content: "String",
+        props: ["String"],
+      },
+      interfaces: ["Node"],
+    }),
+    schema.buildUnionType({
+      name: "Sections",
+      types: ["Text"],
+      resolveType(value) {
+        if (value.template === "text") {
+          return "Text"
+        }
+      },
+    }),
+    schema.buildObjectType({
+      name: "HeroBlock2",
+      fields: {
+        type: "Int",
+        template: "String!",
+        sections: ["Sections"],
+      },
+    }),
+    schema.buildUnionType({
+      name: "NewPage",
+      types: ["HeroBlock2"],
+      resolveType(value) {
+        if (value.template === "heroblock2") {
+          return "HeroBlock2"
+        }
+      },
+    }),
+    schema.buildObjectType({
       name: "Frontmatter",
       fields: {
         blocks: {
           type: ["Page"],
+        },
+        blocks2: {
+          type: ["NewPage"],
         },
       },
     }),
