@@ -1,4 +1,13 @@
 ---
 label: CTA
 hide_body: true
-fields: []
+fields:
+- name: links
+  type: blocks
+  label: Links
+  template_types:
+  - link
+  config:
+    min: 
+    max: 
+  description: Set of call to actions
