@@ -1,0 +1,42 @@
+---
+label: Text
+hide_body: true
+fields:
+- name: type
+  type: select
+  default: Heading
+  config:
+    required: true
+    options:
+    - Title
+    - Subtitle
+    - Description
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  description: 'Type of text. For ex: heading, subtitle, description etc.'
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+  description: The text to be displayed
+- name: props
+  type: tag_list
+  default: []
+  label: Props
+  description: Only CSS Chakra props are allowed
+- name: color
+  type: color
+  config:
+    required: false
+    color_format: Hex
+  label: Color
+  default: "#000000"

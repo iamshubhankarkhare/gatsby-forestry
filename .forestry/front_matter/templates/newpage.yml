@@ -1,0 +1,14 @@
+---
+label: NewPage
+hide_body: true
+fields:
+- name: sections
+  type: blocks
+  label: Sections
+  template_types:
+  - block
+  config:
+    min: 
+    max: 
+pages:
+- content/pages/homepage2.md
