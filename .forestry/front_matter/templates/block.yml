@@ -2,11 +2,12 @@
 label: HeroBlock2
 hide_body: true
 fields:
-- name: block
+- name: sections
   type: blocks
-  label: Block
   template_types:
   - text
   config:
     min: 
     max: 
+  label: Sections
+  description: All different sections inside heroblock.
