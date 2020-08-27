@@ -1,4 +1,37 @@
 ---
 label: Text
 hide_body: true
-fields: []
+fields:
+- name: type
+  type: select
+  default: Heading
+  config:
+    required: true
+    options:
+    - Heading
+    - Subtitle
+    - Description
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  description: 'Type of text. For ex: heading, subtitle, description etc.'
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+  description: The text to be displayed
+- name: color
+  type: color
+  config:
+    required: false
+    color_format: Hex
+  label: Color
+  default: "#000000"

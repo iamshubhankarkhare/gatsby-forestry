@@ -1,0 +1,12 @@
+---
+label: Block
+hide_body: true
+fields:
+- name: block
+  type: blocks
+  label: Block
+  template_types:
+  - text
+  config:
+    min: 
+    max: 
