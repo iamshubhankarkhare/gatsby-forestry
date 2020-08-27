@@ -27,5 +27,15 @@ blocks:
       is the description This is the description This is the description This is the
       description This is the description This is the description This is the description
       This is the description
+  - template: cta
+    links:
+    - template: link
+      linktext: Homepage
+      url: http://beyond8.in/
+      variant: solid
+    - template: link
+      linktext: About Us
+      url: https://beyond8.in/about
+      variant: outline
 
 ---
