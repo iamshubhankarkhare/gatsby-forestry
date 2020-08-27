@@ -14,3 +14,20 @@ fields:
     required: false
   label: URL
   description: Write the url for the link
+- name: variant
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - solid
+    - ghost
+    - outline
+    - link
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Variant
+  description: The style of link
