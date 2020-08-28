@@ -68,6 +68,7 @@ blocks:
         color: "#000000"
         content: Card1 Card1 Card1 Card1 Card1 Card1 Card1 Card1 Card1 Card1 Card1
           Card1 Card1 Card1 Card1 Card1 Card1 Card1 Card1 Card1
+    displayname: Card 1
   - item:
     - template: heroblock2
       type: 0
@@ -83,6 +84,7 @@ blocks:
         color: "#000000"
         content: " Card2 Card2 Card2 Card2  Card2 Card2 Card2 Card2  Card2 Card2 Card2
           Card2"
+    displayname: Card 2
 name: homepage2
 path: "/homepage2"
 
