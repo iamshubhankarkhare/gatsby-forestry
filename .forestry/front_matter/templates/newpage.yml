@@ -24,5 +24,3 @@ fields:
     min: 
     max: 
   description: Different blocks in a page
-pages:
-- content/pages/homepage2.md
