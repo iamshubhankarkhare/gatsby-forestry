@@ -19,6 +19,7 @@ fields:
   label: Blocks
   template_types:
   - heroblock2
+  - cardblock2
   config:
     min: 
     max: 
