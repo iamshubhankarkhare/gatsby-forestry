@@ -2,6 +2,18 @@
 label: NewPage
 hide_body: true
 fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+  description: Name for the page
+- name: path
+  type: text
+  config:
+    required: false
+  label: Path
+  description: Url for the page
 - name: blocks
   type: blocks
   label: Blocks
