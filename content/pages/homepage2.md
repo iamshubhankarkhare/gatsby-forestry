@@ -25,6 +25,16 @@ blocks:
     content: 'Description Description Description Description Description Description
       Description Description Description Description Description Description Description
       Description Description '
+  - template: cta
+    links:
+    - template: link
+      linktext: Beyond8
+      url: https://beyond8.in/
+      variant: solid
+    - template: link
+      linktext: About Us
+      url: https://beyond8.in/about/
+      variant: outline
 - template: cardblock2
   heading:
   - template: heroblock2
