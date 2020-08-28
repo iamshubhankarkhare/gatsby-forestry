@@ -1,0 +1,37 @@
+---
+label: FeatureBlock
+hide_body: true
+fields:
+- name: heading
+  type: blocks
+  label: Heading
+  template_types:
+  - heroblock2
+  config:
+    min: 1
+    max: 1
+  description: Only title and subtitle will be rendered
+- name: cards
+  type: field_group_list
+  fields:
+  - name: displayname
+    type: text
+    config:
+      required: false
+    label: DisplayName
+    description: For recognizing card in forestry
+  - name: item
+    type: blocks
+    label: Item
+    template_types:
+    - heroblock2
+    config:
+      min: 1
+      max: 1
+    description: Heroblock
+  config:
+    min: 
+    max: 
+    labelField: displayname
+  label: Cards
+  description: A repeatable set of heroblocks

@@ -77,12 +77,32 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       },
       interfaces: ["Node"],
     }),
+    schema.buildObjectType({
+      name: "Link",
+      fields: {
+        template: "String",
+        linktext: "String",
+        url: "String",
+        variant: "String",
+      },
+      interfaces: ["Node"],
+    }),
+    schema.buildObjectType({
+      name: "CTA",
+      fields: {
+        links: ["Link"],
+      },
+      interfaces: ["Node"],
+    }),
     schema.buildUnionType({
       name: "Sections",
-      types: ["Text"],
+      types: ["Text", "CTA"],
       resolveType(value) {
         if (value.template === "text") {
           return "Text"
+        }
+        if (value.template === "cta") {
+          return "CTA"
         }
       },
     }),
