@@ -37,5 +37,7 @@ blocks:
       linktext: About Us
       url: https://beyond8.in/about
       variant: outline
+name: homepage2
+path: homepage2
 
 ---
