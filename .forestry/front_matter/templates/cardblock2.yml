@@ -26,8 +26,8 @@ fields:
     template_types:
     - heroblock2
     config:
-      min: 
-      max: 
+      min: 1
+      max: 1
     description: Heroblock
   config:
     min: 
