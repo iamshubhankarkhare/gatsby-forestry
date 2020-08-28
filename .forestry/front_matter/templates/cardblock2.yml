@@ -1,4 +1,32 @@
 ---
-label: CardBlock2
+label: FeatureBlock
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: blocks
+  label: Heading
+  template_types:
+  - heroblock2
+  config:
+    min: 
+    max: 
+  description: The header part of the card block section which is a Hero Block itself.
+    But only Title and subtitle will be rendered.
+- name: cards
+  type: field_group_list
+  fields:
+  - name: item
+    type: blocks
+    label: Item
+    template_types:
+    - heroblock2
+    config:
+      min: 
+      max: 
+    description: Heroblock
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Cards
+  description: A repeatable set of heroblocks
