@@ -24,3 +24,5 @@ fields:
     min: 
     max: 
   description: Different sections in a page
+pages:
+- content/pages/test.md
