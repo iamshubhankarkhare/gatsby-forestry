@@ -2,9 +2,9 @@
 label: HeroBlock2
 hide_body: true
 fields:
-- name: sections
+- name: heading
   type: blocks
-  label: Sections
+  label: Heading
   template_types:
   - text
   - cta
@@ -22,3 +22,9 @@ fields:
     max: 
     step: 
   label: Type
+- name: cta
+  type: include
+  config: {}
+  template: cta
+  label: CTA
+  description: A list of call to actions
