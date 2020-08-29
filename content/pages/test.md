@@ -23,7 +23,11 @@ sections:
     linktext: Test
     url: test
     variant: solid
-  ctas: []
+  ctas:
+  - template: link
+    linktext: HomePage
+    url: "/test"
+    variant: solid
 - template: cardblock2
   heading:
   - template: text
