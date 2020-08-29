@@ -1,6 +1,6 @@
 ---
 name: test
-path: "/test"
+path: test
 sections:
 - template: heroblock2
   type: 0
@@ -23,5 +23,13 @@ sections:
     linktext: Test
     url: test
     variant: solid
+  ctas: []
+- template: cardblock2
+  heading:
+  - template: text
+    type: Title
+    props: []
+    content: Feature block title
+  cards: []
 
 ---
