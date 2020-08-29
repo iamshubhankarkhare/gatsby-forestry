@@ -20,9 +20,9 @@ fields:
       required: false
     label: DisplayName
     description: For recognizing card in forestry
-  - name: item
+  - name: heading
     type: blocks
-    label: Item
+    label: Heading
     template_types:
     - heroblock2
     config:
