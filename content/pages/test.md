@@ -25,7 +25,7 @@ sections:
         url: test
         variant: solid
     ctas: []
-  - template: cardblock2
+  - template: featureblock
     heading:
       - template: text
         type: Title

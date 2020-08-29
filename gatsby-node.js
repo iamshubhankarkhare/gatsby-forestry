@@ -87,23 +87,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       },
       interfaces: ["Node"],
     }),
-    schema.buildObjectType({
-      name: "Heading",
-      fields: {
-        heading: ["Text"],
-      },
-      interfaces: ["Node"],
-    }),
-    schema.buildObjectType({
-      name: "FeatureBlock",
-      fields: {
-        template: "String!",
-        displayname: "String",
-        heading: ["Text"],
-        cards: ["Heading"],
-      },
-      interfaces: ["Node"],
-    }),
+
     schema.buildObjectType({
       name: "CTA",
       fields: {
@@ -119,6 +103,23 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         heading: ["Text"],
         links: ["Link"],
       },
+    }),
+    schema.buildObjectType({
+      name: "Item",
+      fields: {
+        displayname: "String",
+        featured_item: "HeroBlock2",
+      },
+      interfaces: ["Node"],
+    }),
+    schema.buildObjectType({
+      name: "FeatureBlock",
+      fields: {
+        template: "String!",
+        heading: ["Text"],
+        cards: ["Item"],
+      },
+      interfaces: ["Node"],
     }),
     schema.buildUnionType({
       name: "NewPage",
