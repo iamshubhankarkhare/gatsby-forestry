@@ -7,7 +7,7 @@ sections:
     heading:
       - template: text
         type: Title
-        props: []
+        props: ["color=primary.yellow|primary.red","bg=secondary.blue3|primary.yellow"]
         content: This is the Hero Block Title
       - template: text
         type: Subtitle
