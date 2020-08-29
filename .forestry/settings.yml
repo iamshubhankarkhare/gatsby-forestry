@@ -13,6 +13,7 @@ sections:
   match: "**/*"
   new_doc_ext: md
   templates:
+  - newpage
   - page
 upload_dir: content/images
 public_path: "/content/images"

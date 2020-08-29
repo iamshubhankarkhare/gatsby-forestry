@@ -1,0 +1,13 @@
+---
+label: CTA
+hide_body: true
+fields:
+- name: ctas
+  type: blocks
+  label: CTAS
+  template_types:
+  - link
+  config:
+    min: 
+    max: 
+  description: Set of call to actions

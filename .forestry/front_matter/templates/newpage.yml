@@ -1,0 +1,28 @@
+---
+label: NewPage
+hide_body: true
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+  description: Name for the page
+- name: path
+  type: text
+  config:
+    required: false
+  label: Path
+  description: Url for the page
+- name: sections
+  type: blocks
+  label: Sections
+  template_types:
+  - heroblock2
+  - cardblock2
+  config:
+    min: 
+    max: 
+  description: Different sections in a page
+pages:
+- content/pages/test.md
