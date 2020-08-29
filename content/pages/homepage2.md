@@ -58,5 +58,16 @@ blocks:
     heading: []
     links: []
   cards: []
+sections:
+- template: heroblock2
+  type: 0
+  heading:
+  - template: text
+    type: Title
+    props:
+    - color:"gray.500"
+    color: "#000000"
+    content: This is the title of the page
+  links: []
 
 ---
