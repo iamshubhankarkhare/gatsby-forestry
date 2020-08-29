@@ -90,7 +90,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
     schema.buildObjectType({
       name: "Heading",
       fields: {
-        heading: ["HeroBlock2"],
+        heading: ["Text"],
       },
       interfaces: ["Node"],
     }),
@@ -116,8 +116,8 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       fields: {
         type: "Int",
         template: "String!",
-        heading: ["Heading"],
-        cta: "CTA",
+        heading: ["Text"],
+        links: ["Link"],
       },
     }),
     schema.buildUnionType({
