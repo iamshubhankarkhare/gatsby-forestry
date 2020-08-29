@@ -6,7 +6,7 @@ fields:
   type: blocks
   label: Heading
   template_types:
-  - heroblock2
+  - text
   config:
     min: 1
     max: 1
