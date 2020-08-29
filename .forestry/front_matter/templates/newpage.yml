@@ -14,15 +14,15 @@ fields:
     required: false
   label: Path
   description: Url for the page
-- name: blocks
+- name: sections
   type: blocks
-  label: Blocks
+  label: Sections
   template_types:
   - heroblock2
   - cardblock2
   config:
     min: 
     max: 
-  description: Different blocks in a page
+  description: Different sections in a page
 pages:
 - content/pages/homepage2.md

@@ -6,10 +6,10 @@ fields:
   type: blocks
   label: Heading
   template_types:
-  - heroblock2
+  - text
   config:
-    min: 1
-    max: 1
+    min: 
+    max: 
   description: Only title and subtitle will be rendered
 - name: cards
   type: field_group_list
@@ -20,9 +20,9 @@ fields:
       required: false
     label: DisplayName
     description: For recognizing card in forestry
-  - name: item
+  - name: heading
     type: blocks
-    label: Item
+    label: Heading
     template_types:
     - heroblock2
     config:

@@ -1,6 +1,7 @@
 ---
 label: Text
 hide_body: true
+display_field: type
 fields:
 - name: type
   type: select
@@ -33,10 +34,3 @@ fields:
   default: []
   label: Props
   description: Only CSS Chakra props are allowed
-- name: color
-  type: color
-  config:
-    required: false
-    color_format: Hex
-  label: Color
-  default: "#000000"

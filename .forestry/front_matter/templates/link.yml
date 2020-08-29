@@ -1,6 +1,7 @@
 ---
 label: Link
 hide_body: true
+display_field: linktext
 fields:
 - name: linktext
   type: text
