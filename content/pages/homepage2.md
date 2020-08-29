@@ -60,7 +60,7 @@ blocks:
   cards: []
 sections:
 - template: heroblock2
-  type: 0
+  type: 1
   heading:
   - template: text
     type: Title
@@ -68,6 +68,26 @@ sections:
     - color:"gray.500"
     color: "#000000"
     content: This is the title of the page
-  links: []
+  - template: text
+    type: Subtitle
+    props:
+    - color:"pink.300"
+    content: 'This is the subtitle This is the subtitle This is the subtitle '
+  - template: text
+    type: Description
+    props:
+    - color:"green200"
+    - bg:"blue.100"
+    content: 'This is the description This is the description This is the description
+      This is the description This is the description This is the description '
+  links:
+  - template: link
+    linktext: Homepage2
+    url: "/homepage2"
+    variant: solid
+  - template: link
+    linktext: Homepage2
+    url: "/homepage2"
+    variant: ghost
 
 ---
