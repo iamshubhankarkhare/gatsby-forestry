@@ -30,6 +30,11 @@ sections:
     type: Title
     props: []
     content: Feature block title
+  - template: text
+    type: Subtitle
+    props: []
+    content: Feature Section DescriptionFeature Section DescriptionFeature Section
+      DescriptionFeature Section Description
   cards:
   - displayname: Card 1
     heading:
