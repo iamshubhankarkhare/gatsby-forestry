@@ -2,9 +2,9 @@
 label: CTA
 hide_body: true
 fields:
-- name: links
+- name: ctas
   type: blocks
-  label: Links
+  label: CTAS
   template_types:
   - link
   config:
