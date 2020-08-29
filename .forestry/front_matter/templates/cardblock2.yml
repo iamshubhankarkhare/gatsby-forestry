@@ -8,8 +8,8 @@ fields:
   template_types:
   - text
   config:
-    min: 1
-    max: 1
+    min: 
+    max: 
   description: Only title and subtitle will be rendered
 - name: cards
   type: field_group_list
