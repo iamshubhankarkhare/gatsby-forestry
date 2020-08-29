@@ -1,6 +1,7 @@
 ---
 label: Text
 hide_body: true
+display_field: type
 fields:
 - name: type
   type: select
