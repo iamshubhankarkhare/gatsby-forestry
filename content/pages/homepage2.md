@@ -91,22 +91,54 @@ sections:
     variant: ghost
 - template: cardblock2
   heading:
-  - template: heroblock2
-    type: 0
+  - template: text
+    type: Title
+    props:
+    - color:"blue.500"
+    - bg:"pink.400"
+    content: Feature Block Title
+  - template: text
+    type: Subtitle
+    props:
+    - bg:"black"
+    - color:"white"
+    content: This is the subtitle for the feature block
+  cards:
+  - displayname: Card 1
     heading:
-    - template: text
-      type: Title
-      props:
-      - bg:"blue.500"
-      - color:"white"
-      content: This is the feature section title
-    - template: text
-      type: Subtitle
-      props:
-      - color:"gray.500"
-      content: This is the subtitle for the feature section This is the subtitle for
-        the feature section
-    links: []
-  cards: []
+    - template: heroblock2
+      type: 0
+      heading:
+      - template: text
+        type: Title
+        props: []
+        content: Card 1
+      - template: text
+        type: Description
+        props: []
+        content: Card 1 descriptionCard 1 descriptionCard 1 descriptionCard 1 description
+      links:
+      - template: link
+        linktext: Card 1
+        url: "/homepage2"
+        variant: solid
+  - displayname: Card 2
+    heading:
+    - template: heroblock2
+      type: 0
+      heading:
+      - template: text
+        type: Title
+        props: []
+        content: Card 2
+      - template: text
+        type: Description
+        props: []
+        content: Card 2 Description Card 2 Description Card 2 Description Card 2 Description
+      links:
+      - template: link
+        linktext: Card 2
+        url: "/homepage2"
+        variant: ''
 
 ---
