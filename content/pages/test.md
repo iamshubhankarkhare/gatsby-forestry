@@ -25,38 +25,34 @@ sections:
         url: test
         variant: solid
     ctas: []
-  - template: featureblock
+  - template: cardblock2
     heading:
       - template: text
         type: Title
         props: []
-        content: Feature block title
+        content: Title of the featured block
       - template: text
         type: Subtitle
         props: []
-        content:
-          Feature Section DescriptionFeature Section DescriptionFeature Section
-          DescriptionFeature Section Description
+        content: "Subtitle Subtitle Subtitle Subtitle Subtitle "
     cards:
       - displayname: Card 1
         heading:
           - template: text
             type: Title
             props: []
-            content: Card 1
+            content: Card1
           - template: text
             type: Description
             props: []
-            content:
-              " Description for card 1Description for card 1Description for card
-              1Description for card 1"
+            content: CArd 1CArd 1CArd 1CArd 1CArd 1
         ctas:
           - template: link
             linktext: Home
             url: "/"
             variant: solid
-        type: 2
-      - displayname: Card 2
+        type:
+      - displayname: Card2
         heading:
           - template: text
             type: Title
@@ -65,13 +61,11 @@ sections:
           - template: text
             type: Description
             props: []
-            content:
-              card 2 Subtitlecard 2 Subtitlecard 2 Subtitlecard 2 Subtitlecard 2
-              Subtitlecard 2 Subtitle
+            content: CArd 2CArd 2CArd 2CArd 2CArd 2
         ctas:
           - template: link
             linktext: Home
             url: "/"
-            variant: ghost
-        type: 1
+            variant: solid
+        type:
 ---

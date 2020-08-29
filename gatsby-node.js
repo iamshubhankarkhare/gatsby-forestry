@@ -101,14 +101,14 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         type: "Int",
         template: "String!",
         heading: ["Text"],
-        links: ["Link"],
+        ctas: ["Link"],
       },
     }),
     schema.buildObjectType({
       name: "Item",
       fields: {
         displayname: "String",
-        featured_item: "HeroBlock2",
+        type: "HeroBlock2",
       },
       interfaces: ["Node"],
     }),
@@ -117,7 +117,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       fields: {
         template: "String!",
         heading: ["Text"],
-        cards: ["Item"],
+        cards: ["HeroBlock2"],
       },
       interfaces: ["Node"],
     }),
@@ -128,7 +128,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         if (value.template === "heroblock2") {
           return "HeroBlock2"
         }
-        if (value.template === "featureblock") {
+        if (value.template === "cardblock2") {
           return "FeatureBlock"
         }
       },
