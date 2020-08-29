@@ -13,25 +13,41 @@ export const pageQuery = graphql`
     markdownRemark(fields: { sourceName: { eq: "pages" } }, id: { eq: $id }) {
       id
       frontmatter {
-        blocks {
-          ... on HeroBlock {
-            heading
-            subtitle
-            body
+        name
+        path
+        sections {
+          ... on HeroBlock2 {
             template
+            ...HeroBlock2Fragment
           }
-          ... on CardBlock {
-            heading
-            subtitle
-            card {
-              heading
-              subtitle
-              body
-            }
+          ... on FeatureBlock {
             template
+            heading {
+              ...TextFragment
+            }
+            cards {
+              ...HeroBlock2Fragment
+            }
           }
         }
       }
+    }
+  }
+
+  fragment TextFragment on Text {
+    content
+    type
+    props
+  }
+
+  fragment HeroBlock2Fragment on HeroBlock2 {
+    heading {
+      ...TextFragment
+    }
+    ctas {
+      linktext
+      url
+      variant
     }
   }
 `
