@@ -20,10 +20,20 @@ function DHeading({ props }) {
 
   return (
     <>
-      {props.type === "Title" && <Text {...compProps}>{props.content}</Text>}
-      {props.type === "Subtitle" && <Text {...compProps}>{props.content}</Text>}
+      {props.type === "Title" && (
+        <Text as="h1" {...compProps}>
+          {props.content}
+        </Text>
+      )}
+      {props.type === "Subtitle" && (
+        <Text as="h2" {...compProps}>
+          {props.content}
+        </Text>
+      )}
       {props.type === "Description" && (
-        <Text {...compProps}>{props.content}</Text>
+        <Text as="p" {...compProps}>
+          {props.content}
+        </Text>
       )}
     </>
   )
