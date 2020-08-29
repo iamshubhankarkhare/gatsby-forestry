@@ -89,5 +89,24 @@ sections:
     linktext: Homepage2
     url: "/homepage2"
     variant: ghost
+- template: cardblock2
+  heading:
+  - template: heroblock2
+    type: 0
+    heading:
+    - template: text
+      type: Title
+      props:
+      - bg:"blue.500"
+      - color:"white"
+      content: This is the feature section title
+    - template: text
+      type: Subtitle
+      props:
+      - color:"gray.500"
+      content: This is the subtitle for the feature section This is the subtitle for
+        the feature section
+    links: []
+  cards: []
 
 ---
