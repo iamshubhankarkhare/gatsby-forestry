@@ -7,11 +7,16 @@ fields:
   label: Heading
   template_types:
   - text
-  - cta
   config:
     min: 
     max: 
   description: 'Choose different sections: title,subtitle,description, media etc.'
+- name: cta
+  type: include
+  config: {}
+  template: cta
+  label: CTA
+  description: A list of call to actions
 - name: type
   type: number
   description: Type of hero block
@@ -22,9 +27,3 @@ fields:
     max: 
     step: 
   label: Type
-- name: cta
-  type: include
-  config: {}
-  template: cta
-  label: CTA
-  description: A list of call to actions
