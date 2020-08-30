@@ -27,3 +27,8 @@ fields:
     max: 
     step: 
   label: Type
+- name: media
+  type: include
+  config: {}
+  template: media
+  label: Media
