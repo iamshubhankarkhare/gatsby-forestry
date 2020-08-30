@@ -1,8 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Button, ThemeProvider, CSSReset, Flex, Text } from "@chakra-ui/core"
+import {
+  Button,
+  ThemeProvider,
+  CSSReset,
+  Flex,
+  Text,
+  Image,
+} from "@chakra-ui/core"
 import customTheme from "../theme.js"
 import DHeading from "../components/DHeading.js"
+import HeroBlock from "../components/HeroBlock.js"
 
 const Page = ({ data }) => {
   console.log(data.markdownRemark.frontmatter.sections)
@@ -11,8 +19,7 @@ const Page = ({ data }) => {
       <CSSReset />
       {data.markdownRemark.frontmatter.sections.map((el, i) => (
         <Flex direction="column" key={i}>
-          {el.heading &&
-            el.heading.map((h, i) => <DHeading props={h} key={i} />)}
+          {el.__typename === "HeroBlock2" && <HeroBlock props={el} />}
         </Flex>
       ))}
     </ThemeProvider>
@@ -57,6 +64,11 @@ export const pageQuery = graphql`
     heading {
       ...TextFragment
     }
+    containsmedia
+    mediatype
+    path
+    containsimage
+    image
     type
     ctas {
       linktext

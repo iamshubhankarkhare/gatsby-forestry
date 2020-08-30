@@ -1,5 +1,5 @@
 import React from "react"
-import { Text } from "@chakra-ui/core"
+import { Text, Heading } from "@chakra-ui/core"
 
 function DHeading({ props }) {
   console.log(props)
@@ -21,14 +21,14 @@ function DHeading({ props }) {
   return (
     <>
       {props.type === "Title" && (
-        <Text as="h1" {...compProps}>
+        <Heading as="h1" {...compProps}>
           {props.content}
-        </Text>
+        </Heading>
       )}
       {props.type === "Subtitle" && (
-        <Text as="h2" {...compProps}>
+        <Heading as="h2" {...compProps}>
           {props.content}
-        </Text>
+        </Heading>
       )}
       {props.type === "Description" && (
         <Text as="p" {...compProps}>
