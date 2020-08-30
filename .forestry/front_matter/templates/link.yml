@@ -32,3 +32,8 @@ fields:
       path: 
   label: Variant
   description: The style of link
+- name: props
+  type: tag_list
+  default: []
+  label: Props
+  description: Only chakra props
