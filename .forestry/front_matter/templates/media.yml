@@ -36,3 +36,4 @@ fields:
   showOnly:
     field: containsimage
     value: true
+  default: "/content/images/anomaly-oRskqiH7FNc-unsplash.jpg"
