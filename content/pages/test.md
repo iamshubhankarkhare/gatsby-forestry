@@ -31,6 +31,10 @@ sections:
     linktext: HomePage
     url: "/test"
     variant: solid
+  mediatype: Image
+  path: ''
+  containsimage: true
+  image: "/content/images/ruslan-bardash-g83y6do219w-unsplash.jpg"
 - template: cardblock2
   heading:
   - template: text
@@ -58,6 +62,10 @@ sections:
       url: "/"
       variant: solid
     type: 
+    mediatype: ''
+    path: ''
+    containsimage: false
+    image: ''
   - displayname: Card2
     heading:
     - template: text
@@ -74,5 +82,9 @@ sections:
       url: "/"
       variant: solid
     type: 
+    mediatype: ''
+    path: ''
+    containsimage: false
+    image: ''
 
 ---
