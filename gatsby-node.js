@@ -102,6 +102,11 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         template: "String!",
         heading: ["Text"],
         ctas: ["Link"],
+        containsmedia: "Boolean",
+        mediatype: "String",
+        path: "String",
+        containsimage: "Boolean",
+        image: "String",
       },
     }),
     schema.buildObjectType({
