@@ -89,5 +89,20 @@ sections:
     containsimage: false
     image: ''
     containsmedia: false
+- template: heroblock2
+  type: 0
+  mediatype: Iframe
+  image: "/content/images/anomaly-oRskqiH7FNc-unsplash.jpg"
+  heading:
+  - template: text
+    type: Title
+    props: []
+    content: Youtube Video
+  containsmedia: true
+  path: <iframe width="560" height="315" src="https://www.youtube.com/embed/7eoxulE1dJI"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  ctas: []
+  containsimage: false
 
 ---
