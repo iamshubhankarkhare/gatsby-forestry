@@ -35,6 +35,7 @@ sections:
   path: ''
   containsimage: true
   image: "/content/images/ruslan-bardash-g83y6do219w-unsplash.jpg"
+  containsmedia: true
 - template: cardblock2
   heading:
   - template: text
@@ -66,6 +67,7 @@ sections:
     path: ''
     containsimage: false
     image: ''
+    containsmedia: false
   - displayname: Card2
     heading:
     - template: text
@@ -86,5 +88,6 @@ sections:
     path: ''
     containsimage: false
     image: ''
+    containsmedia: false
 
 ---
