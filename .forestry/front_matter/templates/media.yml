@@ -37,3 +37,8 @@ fields:
     field: containsimage
     value: true
   default: "/content/images/anomaly-oRskqiH7FNc-unsplash.jpg"
+- name: props
+  type: tag_list
+  default: []
+  label: Props
+  description: Only chakra props
