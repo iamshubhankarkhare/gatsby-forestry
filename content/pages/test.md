@@ -31,11 +31,13 @@ sections:
     linktext: HomePage
     url: "/test"
     variant: solid
+    props: []
   mediatype: Image
   path: ''
   containsimage: true
   image: "/content/images/ruslan-bardash-g83y6do219w-unsplash.jpg"
   containsmedia: true
+  props: []
 - template: cardblock2
   heading:
   - template: text
@@ -62,12 +64,14 @@ sections:
       linktext: Home
       url: "/"
       variant: solid
+      props: []
     type: 
     mediatype: ''
     path: ''
     containsimage: false
     image: ''
     containsmedia: false
+    props: []
   - displayname: Card2
     heading:
     - template: text
@@ -83,12 +87,14 @@ sections:
       linktext: Home
       url: "/"
       variant: solid
+      props: []
     type: 
     mediatype: ''
     path: ''
     containsimage: false
     image: ''
     containsmedia: false
+    props: []
 - template: heroblock2
   type: 0
   mediatype: Iframe
@@ -102,7 +108,15 @@ sections:
   path: <iframe width="560" height="315" src="https://www.youtube.com/embed/7eoxulE1dJI"
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
-  ctas: []
+  ctas:
+  - template: link
+    props:
+    - bg=primary.red
+    - color=white
+    linktext: Test CTA1
+    url: "/homepage"
+    variant: solid
   containsimage: false
+  props: []
 
 ---
