@@ -122,6 +122,13 @@ sections:
     path: https://www.youtube.com/watch?v=7eoxulE1dJI
     image: ''
     props: []
-  ctas: []
+  ctas:
+  - template: link
+    props:
+    - color=secondary.blue3
+    - fontSize=xl|2xl
+    url: "/"
+    linktext: There's no place like 127.0.0.1
+    type: link
 
 ---
