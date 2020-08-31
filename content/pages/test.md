@@ -34,10 +34,11 @@ sections:
     props: []
   mediatype: Image
   path: ''
-  containsimage: true
+  containsimage: false
   image: "/content/images/ruslan-bardash-g83y6do219w-unsplash.jpg"
   containsmedia: true
-  props: []
+  props:
+  - p=12|4
 - template: cardblock2
   heading:
   - template: text
