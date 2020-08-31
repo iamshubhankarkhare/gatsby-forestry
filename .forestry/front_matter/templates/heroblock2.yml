@@ -27,10 +27,6 @@ fields:
     max: 
     step: 
   label: Type
-- name: containsmedia
-  type: boolean
-  label: ContainsMedia
-  description: 'Toggle to add media '
 - name: media
   type: field_group_list
   fields:
