@@ -4,7 +4,6 @@ import DHeading from "../components/DHeading.js"
 import Cta from "../components/Cta.js"
 
 function HeroBlock({ props }) {
-  console.log(props)
   var compProps = {}
 
   props.props &&
@@ -18,9 +17,7 @@ function HeroBlock({ props }) {
         [prop[0]]: value,
       }
     })
-
-  console.log(props)
-  return (
+  const Type1 = () => (
     <Flex direction="column" {...compProps}>
       {props.heading &&
         props.heading.map((h, i) => <DHeading props={h} key={i} />)}
@@ -32,6 +29,29 @@ function HeroBlock({ props }) {
         ))}
     </Flex>
   )
+
+  const Type2 = () => (
+    <Flex direction="column" {...compProps}>
+      {props.heading &&
+        props.heading.map((h, i) => (
+          <Flex justify="center" key={i}>
+            {h.type === "Title" && <DHeading props={h} />}
+          </Flex>
+        ))}
+      {props.heading &&
+        props.heading.map((h, i) => (
+          <Flex key={i}>{h.type !== "Title" && <DHeading props={h} />}</Flex>
+        ))}
+
+      {props.ctas &&
+        props.ctas.map((h, i) => (
+          <Flex key={i} justify="center">
+            <Cta props={h} />
+          </Flex>
+        ))}
+    </Flex>
+  )
+  return <Type2 />
 }
 
 export default HeroBlock

@@ -3,6 +3,7 @@ import { Text, Heading } from "@chakra-ui/core"
 
 function DHeading({ props }) {
   var compProps = {}
+  props.props &&
   props.props.map((el, i) => {
     var prop = el.split("=")
     var temp
