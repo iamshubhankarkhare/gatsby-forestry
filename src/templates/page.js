@@ -22,6 +22,7 @@ const Page = ({ data }) => {
           {el.__typename === "HeroBlock2" && <HeroBlock props={el} />}
         </Flex>
       ))}
+      <Image src={`${data.markdownRemark.frontmatter.sections[2].image}`} />
     </ThemeProvider>
   )
 }

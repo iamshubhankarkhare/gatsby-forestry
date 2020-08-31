@@ -98,7 +98,7 @@ sections:
 - template: heroblock2
   type: 0
   mediatype: Iframe
-  image: "/content/images/anomaly-oRskqiH7FNc-unsplash.jpg"
+  image: "images/anomaly-oRskqiH7FNc-unsplash.jpg"
   heading:
   - template: text
     type: Title
