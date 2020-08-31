@@ -15,23 +15,21 @@ fields:
     required: false
   label: URL
   description: Write the url for the link
-- name: variant
+- name: type
   type: select
   default: []
   config:
     required: false
     options:
-    - solid
-    - ghost
-    - outline
+    - button
     - link
     source:
       type: simple
       section: 
       file: 
       path: 
-  label: Variant
-  description: The style of link
+  label: Type
+  description: Type pf link
 - name: props
   type: tag_list
   default: []

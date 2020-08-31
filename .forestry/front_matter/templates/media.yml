@@ -2,6 +2,11 @@
 label: Media
 hide_body: true
 fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
 - name: mediatype
   type: select
   default: Image
@@ -24,19 +29,11 @@ fields:
     required: false
   label: Path
   description: Enter url for youtube/iframe
-- name: containsimage
-  type: boolean
-  description: This media contains an image?
-  label: ContainsImage
 - name: image
   type: file
   config:
     maxSize: 64
   label: Image
-  showOnly:
-    field: containsimage
-    value: true
-  default: "/content/images/anomaly-oRskqiH7FNc-unsplash.jpg"
 - name: props
   type: tag_list
   default: []
