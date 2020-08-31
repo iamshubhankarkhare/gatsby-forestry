@@ -29,10 +29,6 @@ fields:
   config:
     maxSize: 64
   label: Image
-  showOnly:
-    field: containsimage
-    value: true
-  default: "/content/images/anomaly-oRskqiH7FNc-unsplash.jpg"
 - name: props
   type: tag_list
   default: []
