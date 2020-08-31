@@ -32,6 +32,7 @@ sections:
     url: "/test"
     variant: solid
     props: []
+    type: ''
   mediatype: Image
   path: ''
   containsimage: false
@@ -45,6 +46,11 @@ sections:
     image: "/content/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
     props: []
     name: Heroblock
+  - name: Plant
+    mediatype: Image
+    image: "/content/images/ren-ran-bBiuSdck8tU-unsplash.jpg"
+    path: ''
+    props: []
 - template: cardblock2
   heading:
   - template: text
@@ -72,6 +78,7 @@ sections:
       url: "/"
       variant: solid
       props: []
+      type: ''
     type: 
     mediatype: ''
     path: ''
@@ -96,6 +103,7 @@ sections:
       url: "/"
       variant: solid
       props: []
+      type: ''
     type: 
     mediatype: ''
     path: ''
@@ -106,27 +114,17 @@ sections:
     media: []
 - template: heroblock2
   type: 0
-  mediatype: Iframe
-  image: "/content/images/anomaly-oRskqiH7FNc-unsplash.jpg"
   heading:
   - template: text
     type: Title
     props: []
-    content: Youtube Video
-  containsmedia: true
-  path: <iframe width="560" height="315" src="https://www.youtube.com/embed/7eoxulE1dJI"
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-  ctas:
-  - template: link
-    props:
-    - bg=primary.red
-    - color=white
-    linktext: Test CTA1
-    url: "/homepage"
-    variant: solid
-  containsimage: false
-  props: []
-  media: []
+    content: Youtube Title
+  media:
+  - name: Youtube Video
+    mediatype: Youtube
+    path: https://www.youtube.com/watch?v=7eoxulE1dJI
+    image: ''
+    props: []
+  ctas: []
 
 ---
