@@ -39,6 +39,11 @@ sections:
   containsmedia: true
   props:
   - p=12|4
+  media:
+  - mediatype: Image
+    path: ''
+    image: "/content/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
+    props: []
 - template: cardblock2
   heading:
   - template: text
@@ -73,6 +78,7 @@ sections:
     image: ''
     containsmedia: false
     props: []
+    media: []
   - displayname: Card2
     heading:
     - template: text
@@ -96,6 +102,7 @@ sections:
     image: ''
     containsmedia: false
     props: []
+    media: []
 - template: heroblock2
   type: 0
   mediatype: Iframe
@@ -119,5 +126,6 @@ sections:
     variant: solid
   containsimage: false
   props: []
+  media: []
 
 ---
