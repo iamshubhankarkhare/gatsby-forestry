@@ -31,8 +31,10 @@ sections:
     linktext: HomePage
     url: "/test"
     variant: solid
-    props: []
-    type: ''
+    props:
+    - color=white
+    - bg=primary.red
+    type: button
   mediatype: Image
   path: ''
   containsimage: false
