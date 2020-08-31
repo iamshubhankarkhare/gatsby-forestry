@@ -32,10 +32,15 @@ fields:
   label: ContainsMedia
   description: 'Toggle to add media '
 - name: media
-  type: include
-  config: {}
-  template: media
+  type: field_group_list
+  fields:
+  - name: media
+    type: include
+    config: {}
+    template: media
+    label: Media
+  config:
+    min: 
+    max: 
+    labelField: 
   label: Media
-  showOnly:
-    field: containsmedia
-    value: true
