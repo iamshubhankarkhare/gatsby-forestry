@@ -2,6 +2,7 @@ import React from "react"
 import { Flex } from "@chakra-ui/core"
 import DHeading from "../components/DHeading.js"
 import Cta from "../components/Cta.js"
+import Media from "../components/Media.js"
 
 function HeroBlock({ props }) {
   var compProps = {}
@@ -38,20 +39,35 @@ function HeroBlock({ props }) {
             {h.type === "Title" && <DHeading props={h} />}
           </Flex>
         ))}
-      {props.heading &&
-        props.heading.map((h, i) => (
-          <Flex key={i}>{h.type !== "Title" && <DHeading props={h} />}</Flex>
-        ))}
+      <Flex my={[4, 12]} direction={["column", "row"]}>
+        <Flex direction="column" w={["100%", "50%"]}>
+          {props.heading &&
+            props.heading.map(
+              (h, i) => h.type !== "Title" && <DHeading props={h} key={i} />
+            )}
 
-      {props.ctas &&
-        props.ctas.map((h, i) => (
-          <Flex key={i} justify="center">
-            <Cta props={h} />
-          </Flex>
-        ))}
+          {props.ctas &&
+            props.ctas.map((h, i) => (
+              <Flex key={i}>
+                <Cta props={h} />
+              </Flex>
+            ))}
+        </Flex>
+        {props.media &&
+          props.media.map((el, i) => (
+            <Flex justify="center" key={i} w={["100%", "50%"]}>
+              <Media props={el} />
+            </Flex>
+          ))}
+      </Flex>
     </Flex>
   )
-  return <Type2 />
+  return (
+    <>
+      {(props.type === 1 || props.type === null) && <Type1 />}
+      {props.type === 2 && <Type2 />}
+    </>
+  )
 }
 
 export default HeroBlock

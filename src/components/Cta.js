@@ -3,7 +3,6 @@ import { Button, Link, Flex } from "@chakra-ui/core"
 
 function Cta({ props }) {
   var compProps = {}
-  console.log(props)
   props.props &&
     props.props.map((el, i) => {
       var prop = el.split("=")

@@ -72,7 +72,7 @@ export const pageQuery = graphql`
       type
       props
     }
-    medias {
+    media {
       mediatype
       path
       image

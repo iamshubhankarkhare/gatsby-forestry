@@ -89,7 +89,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       interfaces: ["Node"],
     }),
     schema.buildObjectType({
-      name: "media",
+      name: "medium",
       fields: {
         template: "String",
         mediatype: "String",
@@ -116,7 +116,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         ctas: ["Link"],
         containsmedia: "Boolean",
         containsimage: "Boolean",
-        medias: ["media"],
+        media: ["medium"],
         props: ["String"],
       },
     }),

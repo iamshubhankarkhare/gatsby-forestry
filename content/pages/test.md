@@ -3,7 +3,7 @@ name: test
 path: test
 sections:
 - template: heroblock2
-  type: 
+  type: 2 
   heading:
   - template: text
     type: Title
@@ -39,19 +39,16 @@ sections:
     - variant=solid
     - my=4
     - bg=primary.red
+    - mx=auto
     type: button
-  mediatype: Image
-  path: ''
-  containsimage: false
-  image: "/content/images/ruslan-bardash-g83y6do219w-unsplash.jpg"
-  containsmedia: true
   props:
   - p=12|4
   media:
   - mediatype: Image
     path: ''
-    image: "/content/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
-    props: []
+    image: "/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
+    props: 
+    - size=xs
     name: Heroblock
 - template: cardblock2
   heading:
@@ -115,7 +112,7 @@ sections:
     props: []
     media: []
 - template: heroblock2
-  type: 0
+  type: 1
   heading:
   - template: text
     type: Title
