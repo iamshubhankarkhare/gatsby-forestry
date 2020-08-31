@@ -35,7 +35,6 @@ sections:
       - template: link
         linktext: HomePage
         url: "/test"
-        variant: solid
         props: []
         type: ""
     mediatype: Image

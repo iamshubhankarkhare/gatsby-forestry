@@ -7,16 +7,17 @@ function HeroBlock({ props }) {
   console.log(props)
   var compProps = {}
 
-  props.props.map((el, i) => {
-    var prop = el.split("=")
-    var temp
-    if (prop[1].includes("|")) temp = prop[1].split("|")
-    const value = prop[1].includes("|") ? temp : prop[1]
-    compProps = {
-      ...compProps,
-      [prop[0]]: value,
-    }
-  })
+  props.props &&
+    props.props.map((el, i) => {
+      var prop = el.split("=")
+      var temp
+      if (prop[1].includes("|")) temp = prop[1].split("|")
+      const value = prop[1].includes("|") ? temp : prop[1]
+      compProps = {
+        ...compProps,
+        [prop[0]]: value,
+      }
+    })
 
   console.log(props)
   return (

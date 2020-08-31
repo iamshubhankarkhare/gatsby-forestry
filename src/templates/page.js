@@ -64,17 +64,18 @@ export const pageQuery = graphql`
     heading {
       ...TextFragment
     }
-    containsmedia
-    mediatype
-    path
-    containsimage
-    image
     type
     props
     ctas {
       linktext
       url
-      variant
+      type
+      props
+    }
+    medias {
+      mediatype
+      path
+      image
       props
     }
   }
