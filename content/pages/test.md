@@ -44,6 +44,7 @@ sections:
     path: ''
     image: "/content/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
     props: []
+    name: Heroblock
 - template: cardblock2
   heading:
   - template: text
