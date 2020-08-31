@@ -8,19 +8,24 @@ sections:
   - template: text
     type: Title
     props:
-    - color=primary.yellow|primary.red
-    - bg=secondary.blue3|primary.yellow
-    - fontSize=xl|2xl|3xl
+    - color=secondary.blue3
+    - alignSelf=center 
+    - fontSize=3xl|4xl
+    - my=4|12
     content: This is the Hero Block Title
   - template: text
     type: Subtitle
-    props: []
+    props:
+    - mx=0|12
+    - my=4
+    - fontSize=2xl|3xl
     content: This is the Subtitle
   - template: text
     type: Description
-    props: []
-    content: Description Description Description Description Description Description
-      Description
+    props: 
+    - mx=0|12
+    - my=4
+    content: Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   links:
   - template: link
     linktext: Test
@@ -31,7 +36,11 @@ sections:
     linktext: HomePage
     url: "/test"
     variant: solid
-    props: []
+    props: 
+    - bg=secondary.blue3
+    - color=white
+    - fontSize=sm
+    - m=4
   mediatype: Image
   path: ''
   containsimage: false
@@ -103,7 +112,10 @@ sections:
   heading:
   - template: text
     type: Title
-    props: []
+    props: 
+    - alignSelf=center
+    - color=primary.red
+    - m=4|12
     content: Youtube Video
   containsmedia: true
   path: <iframe width="560" height="315" src="https://www.youtube.com/embed/7eoxulE1dJI"
@@ -112,11 +124,11 @@ sections:
   ctas:
   - template: link
     props:
-    - bg=primary.red
-    - color=white
+    - borderColor=primary.red
+    - color=primary.red
     linktext: Test CTA1
     url: "/homepage"
-    variant: solid
+    variant: outline
   containsimage: false
   props: []
 

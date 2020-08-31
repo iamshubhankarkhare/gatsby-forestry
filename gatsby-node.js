@@ -84,6 +84,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         linktext: "String",
         url: "String",
         variant: "String",
+        props: ["String"],
       },
       interfaces: ["Node"],
     }),
@@ -107,6 +108,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         path: "String",
         containsimage: "Boolean",
         image: "String",
+        props: ["String"],
       },
     }),
     schema.buildObjectType({

@@ -22,7 +22,6 @@ const Page = ({ data }) => {
           {el.__typename === "HeroBlock2" && <HeroBlock props={el} />}
         </Flex>
       ))}
-      <Image src={`${data.markdownRemark.frontmatter.sections[2].image}`} />
     </ThemeProvider>
   )
 }
@@ -71,10 +70,12 @@ export const pageQuery = graphql`
     containsimage
     image
     type
+    props
     ctas {
       linktext
       url
       variant
+      props
     }
   }
 `
