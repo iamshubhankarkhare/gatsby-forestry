@@ -24,10 +24,6 @@ fields:
     required: false
   label: Path
   description: Enter url for youtube/iframe
-- name: containsimage
-  type: boolean
-  description: This media contains an image?
-  label: ContainsImage
 - name: image
   type: file
   config:
