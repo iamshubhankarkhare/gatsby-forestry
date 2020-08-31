@@ -48,11 +48,6 @@ sections:
     image: "/content/images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
     props: []
     name: Heroblock
-  - name: Plant
-    mediatype: Image
-    image: "/content/images/ren-ran-bBiuSdck8tU-unsplash.jpg"
-    path: ''
-    props: []
 - template: cardblock2
   heading:
   - template: text
