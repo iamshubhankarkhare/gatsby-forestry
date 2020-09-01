@@ -61,7 +61,15 @@ export const pageQuery = graphql`
     ctas {
       linktext
       url
-      variant
+      type
+      props
+    }
+    media {
+      mediatype
+      path
+
+      image
+      props
     }
   }
 `

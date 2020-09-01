@@ -83,7 +83,8 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         template: "String",
         linktext: "String",
         url: "String",
-        variant: "String",
+        type: "String",
+        props: ["String"],
       },
       interfaces: ["Node"],
     }),
@@ -96,17 +97,23 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
       interfaces: ["Node"],
     }),
     schema.buildObjectType({
+      name: "Media",
+      fields: {
+        name: "String",
+        mediatype: "String",
+        path: "String",
+        image: "String",
+        props: ["String"],
+      },
+    }),
+    schema.buildObjectType({
       name: "HeroBlock2",
       fields: {
         type: "Int",
         template: "String!",
         heading: ["Text"],
         ctas: ["Link"],
-        containsmedia: "Boolean",
-        mediatype: "String",
-        path: "String",
-        containsimage: "Boolean",
-        image: "String",
+        media: ["Media"],
       },
     }),
     schema.buildObjectType({
