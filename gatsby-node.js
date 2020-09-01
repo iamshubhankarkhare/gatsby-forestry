@@ -114,6 +114,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
         heading: ["Text"],
         ctas: ["Link"],
         media: ["Media"],
+        props: ["String"],
       },
     }),
     schema.buildObjectType({

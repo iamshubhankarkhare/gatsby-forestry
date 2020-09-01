@@ -1,34 +1,31 @@
 import React from "react"
-import { Text } from "@chakra-ui/core"
+import { Text, Heading } from "@chakra-ui/core"
 
 function DHeading({ props }) {
-  console.log(props)
   var compProps = {}
-  props.props.map((el, i) => {
-    var prop = el.split("=")
-    console.log(prop)
-    var temp
-    if (prop[1].includes("|")) temp = prop[1].split("|")
-    console.log(temp)
-    const value = prop[1].includes("|") ? temp : prop[1]
-    compProps = {
-      ...compProps,
-      [prop[0]]: value,
-    }
-    console.log(compProps)
-  })
+  props.props &&
+    props.props.map((el, i) => {
+      var prop = el.split("=")
+      var temp
+      if (prop[1].includes("|")) temp = prop[1].split("|")
+      const value = prop[1].includes("|") ? temp : prop[1]
+      compProps = {
+        ...compProps,
+        [prop[0]]: value,
+      }
+    })
 
   return (
     <>
       {props.type === "Title" && (
-        <Text as="h1" {...compProps}>
+        <Heading as="h1" {...compProps}>
           {props.content}
-        </Text>
+        </Heading>
       )}
       {props.type === "Subtitle" && (
-        <Text as="h2" {...compProps}>
+        <Heading as="h2" {...compProps}>
           {props.content}
-        </Text>
+        </Heading>
       )}
       {props.type === "Description" && (
         <Text as="p" {...compProps}>
