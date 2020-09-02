@@ -225,5 +225,55 @@ sections:
   props:
   - bg=secondary.black
   - minH=100vh
+- template: heroblock2
+  type: 5
+  heading:
+  - template: text
+    type: Title
+    props:
+    - color=white
+    - fontSize=2xl|5xl
+    - mt=4
+    - alignSelf=center
+    content: THIS IS A Type 5 TITLE 
+  - template: text
+    type: Description
+    props:
+    - color=white
+    - my=4|8
+    - mx=8|20
+    - alignSelf=center
+    content: 'Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Cras faucibus, eros vitae condimentum vestibulum, augue ipsum congue augue,
+      eget consectetur mauris purus non massa. Nulla facilisi. Proin ullamcorper libero
+      efficitur sem dapibus, sit amet condimentum sapien tincidunt. Nam felis sem,
+      tristique vel imperdiet faucibus, tincidunt at tortor. Nulla faucibus tincidunt
+      lectus, sed luctus nulla tristique ac. Nunc consectetur odio massa, eu molestie
+      enim aliquam vel. Nullam nulla turpis, maximus vel est quis, vestibulum dictum
+      leo.
+
+'
+  ctas:
+  - template: link
+    props:
+    - bg=primary.red
+    - color=white
+    - my=4
+    - mx=auto 
+    type: button
+    url: "/"
+    linktext: New Cta
+  media:
+  - mediatype: Image
+    name: img
+    image: "images/ren-ran-bBiuSdck8tU-unsplash.jpg"
+    props:
+    - size=2xl
+    path: ''
+  props:
+  - bg=secondary.black
+  - minH=100vh
+  - align=center
+  - justify=center
  
 ---

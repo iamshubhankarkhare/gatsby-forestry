@@ -84,6 +84,22 @@ function HeroBlock({ props }) {
         ))}
     </Flex>
   )
+  const Type5 = () => (
+    <Flex
+      {...compProps}
+      bgImage={`url(${props.media[0].image})`}
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
+      bgSize={["contain", "cover"]}
+    >
+      <TextCtaBlock
+        w={["md", "2xl"]}
+        bg={compProps.bg}
+        opacity="0.95"
+        justify="center"
+      />
+    </Flex>
+  )
   return (
     <>
       {(props.type === 1 || props.type === null) && (
@@ -116,6 +132,14 @@ function HeroBlock({ props }) {
             Type4
           </Text>
           <Type4 />
+        </>
+      )}
+      {props.type === 5 && (
+        <>
+          <Text bg="white" fontSize="3xl" textAlign="center">
+            Type5
+          </Text>
+          <Type5 />
         </>
       )}
     </>
