@@ -32,34 +32,24 @@ function HeroBlock({ props }) {
   )
 
   const Type2 = () => (
-    <Flex direction="column" {...compProps}>
-      {props.heading &&
-        props.heading.map((h, i) => (
-          <Flex justify="center" key={i}>
-            {h.type === "Title" && <DHeading props={h} />}
-          </Flex>
-        ))}
-      <Flex my={[4, 12]} direction={["column", "row"]}>
-        <Flex direction="column" w={["100%", "50%"]}>
-          {props.heading &&
-            props.heading.map(
-              (h, i) => h.type !== "Title" && <DHeading props={h} key={i} />
-            )}
+    <Flex direction={["column", "row-reverse"]} {...compProps}>
+      <Flex direction="column" w={["100%", "50%"]}>
+        {props.heading &&
+          props.heading.map((h, i) => <DHeading props={h} key={i} />)}
 
-          {props.ctas &&
-            props.ctas.map((h, i) => (
-              <Flex key={i}>
-                <Cta props={h} />
-              </Flex>
-            ))}
-        </Flex>
-        {props.media &&
-          props.media.map((el, i) => (
-            <Flex justify="center" key={i} w={["100%", "50%"]}>
-              <Media props={el} />
+        {props.ctas &&
+          props.ctas.map((h, i) => (
+            <Flex key={i}>
+              <Cta props={h} />
             </Flex>
           ))}
       </Flex>
+      {props.media &&
+        props.media.map((el, i) => (
+          <Flex justify="center" key={i} w={["100%", "50%"]}>
+            <Media props={el} />
+          </Flex>
+        ))}
     </Flex>
   )
   return (

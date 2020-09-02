@@ -8,21 +8,15 @@ sections:
       - template: text
         type: Title
         props:
-          - alignSelf=center
-          - color=secondary.blue3
-        content: This is the Hero Block Title
-      - template: text
-        type: Subtitle
-        props:
-          - px=4|12
-          - my=4
-          - fontSize=2xl|3xl
-        content: This is the Subtitle
+          - color=white
+          - fontSize=2xl|5xl
+        content: This is a Block Title
       - template: text
         type: Description
         props:
-          - px=4|12
           - my=4
+          - pr=8|20
+          - color=white
         content:
           Description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus, eros vitae condimentum vestibulum, augue ipsum congue augue, eget consectetur mauris purus non massa. Nulla facilisi. Proin ullamcorper libero efficitur sem dapibus, sit amet condimentum sapien tincidunt. Nam felis sem, tristique vel imperdiet faucibus, tincidunt at tortor. Nulla faucibus tincidunt lectus, sed luctus nulla tristique ac. Nunc consectetur odio massa, eu molestie enim aliquam vel. Nullam nulla turpis, maximus vel est quis, vestibulum dictum leo.
           Description
@@ -40,10 +34,11 @@ sections:
           - variant=solid
           - my=4
           - bg=primary.red
-          - mx=auto
         type: button
     props:
-      - p=12|4
+      - px=12
+      - py=12|20
+      - bg=secondary.black
     media:
       - mediatype: Image
         path: ""
