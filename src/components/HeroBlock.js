@@ -1,5 +1,5 @@
 import React from "react"
-import { Flex } from "@chakra-ui/core"
+import { Flex, Text } from "@chakra-ui/core"
 import DHeading from "../components/DHeading.js"
 import Cta from "../components/Cta.js"
 import Media from "../components/Media.js"
@@ -65,13 +65,59 @@ function HeroBlock({ props }) {
     </Flex>
   )
 
+  const Type4 = () => (
+    <Flex direction={["column", "row"]} {...compProps}>
+      <Flex w={["100%", "40%"]} align="center">
+        <TextCtaBlock mx="8" />
+      </Flex>
+      {props.media &&
+        props.media.map((el, i) => (
+          <Flex
+            justify="center"
+            w={["100%", "60%"]}
+            key={i}
+            bgImage={`url(${el.image})`}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            bgSize={["contain", "cover"]}
+          ></Flex>
+        ))}
+    </Flex>
+  )
   return (
     <>
       {(props.type === 1 || props.type === null) && (
-        <TextCtaBlock {...compProps} />
+        <>
+          <TextCtaBlock {...compProps} />
+          <Text bg="white" fontSize="3xl" textAlign="center">
+            Type2
+          </Text>
+        </>
       )}
-      {props.type === 2 && <Type2 />}
-      {props.type === 3 && <Type3 />}
+      {props.type === 2 && (
+        <>
+          <Text bg="white" fontSize="3xl" textAlign="center">
+            Type2
+          </Text>
+          <Type2 />
+        </>
+      )}{" "}
+      {props.type === 3 && (
+        <>
+          <Text bg="white" fontSize="3xl" textAlign="center">
+            Type3
+          </Text>
+          <Type3 />
+        </>
+      )}{" "}
+      {props.type === 4 && (
+        <>
+          <Text bg="white" fontSize="3xl" textAlign="center">
+            Type4
+          </Text>
+          <Type4 />
+        </>
+      )}
     </>
   )
 }

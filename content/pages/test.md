@@ -10,7 +10,7 @@ sections:
     props:
     - color=white
     - fontSize=2xl|5xl
-    content: This is a Block Title
+    content: This is a type 2 Title 
   - template: text
     type: Description
     props:
@@ -113,7 +113,7 @@ sections:
     props: []
     media: []
 - template: heroblock2
-  type: 1
+  type: 0
   heading:
   - template: text
     type: Title
@@ -142,7 +142,7 @@ sections:
     - color=white
     - fontSize=2xl|5xl
     - alignSelf=center
-    content: THIS IS A TITLE
+    content: THIS IS A Type 3 TITLE 
   - template: text
     type: Description
     props:
@@ -165,7 +165,7 @@ sections:
     props:
     - bg=primary.red
     - color=white
-    - my=4|12
+    - mb=4|12
     type: button
     url: "/"
     linktext: New Cta
@@ -180,5 +180,50 @@ sections:
   - px=12|20
   - pt=12|20
   - bg=secondary.black
+- template: heroblock2
+  type: 4
+  heading:
+  - template: text
+    type: Title
+    props:
+    - color=white
+    - fontSize=2xl|5xl
+    - mt=4
+    content: THIS IS A Type 4 TITLE 
+  - template: text
+    type: Description
+    props:
+    - color=white
+    - my=4|8
+    - mr=4|16
+    content: 'Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Cras faucibus, eros vitae condimentum vestibulum, augue ipsum congue augue,
+      eget consectetur mauris purus non massa. Nulla facilisi. Proin ullamcorper libero
+      efficitur sem dapibus, sit amet condimentum sapien tincidunt. Nam felis sem,
+      tristique vel imperdiet faucibus, tincidunt at tortor. Nulla faucibus tincidunt
+      lectus, sed luctus nulla tristique ac. Nunc consectetur odio massa, eu molestie
+      enim aliquam vel. Nullam nulla turpis, maximus vel est quis, vestibulum dictum
+      leo.
+
+'
+  ctas:
+  - template: link
+    props:
+    - bg=primary.red
+    - color=white
+    - my=4
+    type: button
+    url: "/"
+    linktext: New Cta
+  media:
+  - mediatype: Image
+    name: img
+    image: "images/ren-ran-bBiuSdck8tU-unsplash.jpg"
+    props:
+    - size=2xl
+    path: ''
+  props:
+  - bg=secondary.black
+  - minH=100vh
  
 ---
