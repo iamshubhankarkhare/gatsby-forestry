@@ -138,13 +138,18 @@ sections:
   heading:
   - template: text
     type: Title
-    props: []
+    props:
+    - color=white
+    - fontSize=2xl|5xl
+    - alignSelf=center
     content: THIS IS A TITLE
   - template: text
     type: Description
     props:
     - color=white
     - my=4|8
+    - mx=4|20
+    - alignSelf=center
     content: 'Description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Cras faucibus, eros vitae condimentum vestibulum, augue ipsum congue augue,
       eget consectetur mauris purus non massa. Nulla facilisi. Proin ullamcorper libero
@@ -160,14 +165,20 @@ sections:
     props:
     - bg=primary.red
     - color=white
+    - my=4|12
     type: button
     url: "/"
     linktext: New Cta
   media:
   - mediatype: Image
     name: img
-    image: "/content/images/ren-ran-bBiuSdck8tU-unsplash.jpg"
-    props: []
+    image: "images/ren-ran-bBiuSdck8tU-unsplash.jpg"
+    props:
+    - size=md
     path: ''
-
+  props:
+  - px=12|20
+  - pt=12|20
+  - bg=secondary.black
+ 
 ---
