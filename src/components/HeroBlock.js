@@ -18,32 +18,32 @@ function HeroBlock({ props }) {
         [prop[0]]: value,
       }
     })
-  const Type1 = () => (
-    <Flex direction="column" {...compProps}>
+  const TextBlock = () => (
+    <Flex direction="column">
       {props.heading &&
         props.heading.map((h, i) => <DHeading props={h} key={i} />)}
+    </Flex>
+  )
+  const CtaBlock = () => (
+    <>
       {props.ctas &&
         props.ctas.map((h, i) => (
-          <Flex key={i} justify="center">
+          <Flex key={i}>
             <Cta props={h} />
           </Flex>
         ))}
+    </>
+  )
+  const TextCtaBlock = props => (
+    <Flex direction="column" {...props}>
+      <TextBlock />
+      <CtaBlock />
     </Flex>
   )
 
   const Type2 = () => (
     <Flex direction={["column", "row-reverse"]} {...compProps}>
-      <Flex direction="column" w={["100%", "50%"]}>
-        {props.heading &&
-          props.heading.map((h, i) => <DHeading props={h} key={i} />)}
-
-        {props.ctas &&
-          props.ctas.map((h, i) => (
-            <Flex key={i}>
-              <Cta props={h} />
-            </Flex>
-          ))}
-      </Flex>
+      <TextCtaBlock w={["100%", "50%"]} />
       {props.media &&
         props.media.map((el, i) => (
           <Flex justify="center" key={i} w={["100%", "50%"]}>
@@ -52,10 +52,26 @@ function HeroBlock({ props }) {
         ))}
     </Flex>
   )
+
+  const Type3 = () => (
+    <Flex direction="column" {...compProps}>
+      <TextCtaBlock align="center" />
+      {props.media &&
+        props.media.map((el, i) => (
+          <Flex justify="center" key={i}>
+            <Media props={el} />
+          </Flex>
+        ))}
+    </Flex>
+  )
+
   return (
     <>
-      {(props.type === 1 || props.type === null) && <Type1 />}
+      {(props.type === 1 || props.type === null) && (
+        <TextCtaBlock {...compProps} />
+      )}
       {props.type === 2 && <Type2 />}
+      {props.type === 3 && <Type3 />}
     </>
   )
 }
