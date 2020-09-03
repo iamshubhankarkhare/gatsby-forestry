@@ -90,10 +90,10 @@ function HeroBlock({ props }) {
       bgImage={`url(${props.media[0].image})`}
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      bgSize={["contain", "cover"]}
+      bgSize={"cover"}
     >
       <TextCtaBlock
-        w={["md", "2xl"]}
+        w={["xs", "2xl"]}
         bg={compProps.bg}
         opacity="0.95"
         justify="center"

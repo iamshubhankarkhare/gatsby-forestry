@@ -247,8 +247,6 @@ sections:
       Cras faucibus, eros vitae condimentum vestibulum, augue ipsum congue augue,
       eget consectetur mauris purus non massa. Nulla facilisi. Proin ullamcorper libero
       efficitur sem dapibus, sit amet condimentum sapien tincidunt. Nam felis sem,
-      tristique vel imperdiet faucibus, tincidunt at tortor. Nulla faucibus tincidunt
-      lectus, sed luctus nulla tristique ac. Nunc consectetur odio massa, eu molestie
       enim aliquam vel. Nullam nulla turpis, maximus vel est quis, vestibulum dictum
       leo.
 
